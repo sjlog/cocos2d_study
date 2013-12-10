@@ -111,7 +111,7 @@
     
     location = [[CCDirector sharedDirector]convertToGL:location];
     
-    [_myChar setPosition:ccp(location.x, _myChar.position.y)];
+    [_myChar setPosition:ccp(location.x, location.y)];
 }
 
 
