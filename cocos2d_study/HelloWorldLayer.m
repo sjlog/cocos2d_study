@@ -37,6 +37,8 @@
 // on "init" you need to initialize your instance
 -(id) init
 {
+    NSLog(@"hello world layer init");
+    
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
