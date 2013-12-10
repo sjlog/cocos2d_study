@@ -11,9 +11,6 @@
 #import "IntroLayer.h"
 #import "HelloWorldLayer.h"
 
-#import "MyCocos2DLayer.h"
-
-
 #pragma mark - IntroLayer
 
 // HelloWorldLayer implementation
@@ -66,6 +63,6 @@
     
     NSLog(@"HelloWorldLayer input");
     
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[MyCocos2DLayer scene] ]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] ]];
 }
 @end
