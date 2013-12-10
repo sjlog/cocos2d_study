@@ -65,7 +65,7 @@
         
         [self addChild:hyper];
         
-        self.isTouchEnabled = YES;
+        [self setTouchEnabled:YES];
         
         [self schedule:@selector(TimerMethod:)];
         
@@ -76,7 +76,7 @@
 }
 
 -(void)registerWithTouchDispatcher{
-    [[CCTouchDispatcher sharedDispatcher]addTargetedDelegate:self
+    [[[CCDirector sharedDirector] touchDispatcher]addTargetedDelegate:self
                                                     priority:0 swallowsTouches:YES];
 }
 
