@@ -15,6 +15,10 @@
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer
 {
+    CCSprite *_myChar;
+    CCSprite *background1, *background2;
+    
+    
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
