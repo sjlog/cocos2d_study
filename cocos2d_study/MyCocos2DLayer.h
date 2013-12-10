@@ -16,4 +16,10 @@
 
 +(CCScene *) scene;
 
+-(void)TimerMethod:(ccTime)cct;
+
+-(void)draw;
+
+
+
 @end

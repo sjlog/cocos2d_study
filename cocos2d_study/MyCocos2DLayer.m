@@ -56,13 +56,58 @@
         
         hyper.rotation = 45.0;
         hyper.scale = 2.0;
+        
+        hyper.opacity = 255;     //alphablend 0~255
+        
         [hyper setScaleX:1.5];
         
         
+        
         [self addChild:hyper];
+        
+        self.isTouchEnabled = YES;
+        
+        [self schedule:@selector(TimerMethod:)];
+        
+        
     }
     
     return self;
+}
+
+-(void)registerWithTouchDispatcher{
+    [[CCTouchDispatcher sharedDispatcher]addTargetedDelegate:self
+                                                    priority:0 swallowsTouches:YES];
+}
+
+-(BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CGPoint location = [self convertTouchToNodeSpace:touch];
+    
+    [hyper stopAllActions];
+    
+    id move = [CCMoveTo actionWithDuration:1.0f
+                                  position:location];
+    
+    [hyper runAction:move];
+    
+    return YES;
+}
+
+-(void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    
+}
+
+-(void)TimerMethod:(ccTime)cct
+{
+    hyper.position = ccp(hyper.position.x + 50 * cct, hyper.position.y);
+    
+}
+
+-(void)draw
+{
+    
 }
 
 
