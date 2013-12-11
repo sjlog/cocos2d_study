@@ -43,10 +43,26 @@
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
 		
+        CCMenuItem *item1 = [CCMenuItemImage itemWithNormalImage:@"button_normal.png"
+                                                   selectedImage:@"button_selected.png"
+                                                          target:self
+                                                        selector:@selector(btnClick:)];
+        
+        
+        CCMenu *menu = [CCMenu menuWithItems:item1, nil];
+        
+        [menu setPosition:ccp(480/2, 320/2)];
+        
+        [self addChild:menu];
 	
 
 	}
 	return self;
+}
+
+-(void)btnClick:(id)sender
+{
+    NSLog(@"button click");
 }
 
 
