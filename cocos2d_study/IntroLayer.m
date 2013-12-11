@@ -9,7 +9,7 @@
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
+#import "MyCocos2DClass.h"
 
 #pragma mark - IntroLayer
 
@@ -63,6 +63,6 @@
     
     NSLog(@"HelloWorldLayer input");
     
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] ]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[MyCocos2DClass scene] ]];
 }
 @end

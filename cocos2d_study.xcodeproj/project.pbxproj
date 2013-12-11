@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3D116C1857EDA000E6E500 /* MyCocos2DClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3D116B1857EDA000E6E500 /* MyCocos2DClass.m */; };
+		EA3D116F1857EF8400E6E500 /* backGround.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D116D1857EF8400E6E500 /* backGround.png */; };
+		EA3D11701857EF8400E6E500 /* dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3D116E1857EF8400E6E500 /* dragon.png */; };
+		EA3D11731857EFC700E6E500 /* MyChar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3D11721857EFC700E6E500 /* MyChar.m */; };
 		EA4160511856A393004CA013 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4160501856A393004CA013 /* QuartzCore.framework */; };
 		EA4160531856A393004CA013 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4160521856A393004CA013 /* OpenGLES.framework */; };
 		EA4160551856A393004CA013 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4160541856A393004CA013 /* OpenAL.framework */; };
@@ -139,12 +143,16 @@
 		EA4161EF1856A395004CA013 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = EA4161EE1856A395004CA013 /* vec4.c */; };
 		EA4161F41856A395004CA013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161F31856A395004CA013 /* main.m */; };
 		EA4161F71856A395004CA013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161F61856A395004CA013 /* AppDelegate.m */; };
-		EA4161FA1856A395004CA013 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161F91856A395004CA013 /* HelloWorldLayer.m */; };
 		EA4161FD1856A395004CA013 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161FC1856A395004CA013 /* IntroLayer.m */; };
-		EAAA01091856B86500D294EC /* hyper-app-creators.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAA01081856B86500D294EC /* hyper-app-creators.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3D116A1857EDA000E6E500 /* MyCocos2DClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCocos2DClass.h; sourceTree = "<group>"; };
+		EA3D116B1857EDA000E6E500 /* MyCocos2DClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCocos2DClass.m; sourceTree = "<group>"; };
+		EA3D116D1857EF8400E6E500 /* backGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backGround.png; path = Resources/backGround.png; sourceTree = "<group>"; };
+		EA3D116E1857EF8400E6E500 /* dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dragon.png; path = Resources/dragon.png; sourceTree = "<group>"; };
+		EA3D11711857EFC700E6E500 /* MyChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChar.h; sourceTree = "<group>"; };
+		EA3D11721857EFC700E6E500 /* MyChar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChar.m; sourceTree = "<group>"; };
 		EA41604D1856A393004CA013 /* cocos2d_study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocos2d_study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4160501856A393004CA013 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EA4160521856A393004CA013 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -422,11 +430,8 @@
 		EA4161F31856A395004CA013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA4161F51856A395004CA013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA4161F61856A395004CA013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA4161F81856A395004CA013 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		EA4161F91856A395004CA013 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		EA4161FB1856A395004CA013 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		EA4161FC1856A395004CA013 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		EAAA01081856B86500D294EC /* hyper-app-creators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hyper-app-creators.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -489,13 +494,15 @@
 			children = (
 				EA4161F51856A395004CA013 /* AppDelegate.h */,
 				EA4161F61856A395004CA013 /* AppDelegate.m */,
-				EA4161F81856A395004CA013 /* HelloWorldLayer.h */,
-				EA4161F91856A395004CA013 /* HelloWorldLayer.m */,
 				EA4161FB1856A395004CA013 /* IntroLayer.h */,
 				EA4161FC1856A395004CA013 /* IntroLayer.m */,
 				EA4160651856A393004CA013 /* Resources */,
 				EA41607D1856A393004CA013 /* libs */,
 				EA4161F11856A395004CA013 /* Supporting Files */,
+				EA3D116A1857EDA000E6E500 /* MyCocos2DClass.h */,
+				EA3D116B1857EDA000E6E500 /* MyCocos2DClass.m */,
+				EA3D11711857EFC700E6E500 /* MyChar.h */,
+				EA3D11721857EFC700E6E500 /* MyChar.m */,
 			);
 			path = cocos2d_study;
 			sourceTree = "<group>";
@@ -503,11 +510,12 @@
 		EA4160651856A393004CA013 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA3D116D1857EF8400E6E500 /* backGround.png */,
+				EA3D116E1857EF8400E6E500 /* dragon.png */,
 				EA4160661856A393004CA013 /* Default.png */,
 				EA4160681856A393004CA013 /* Default@2x.png */,
 				EA41606A1856A393004CA013 /* Default-568h@2x.png */,
 				EA41606C1856A393004CA013 /* Default-Landscape~ipad.png */,
-				EAAA01081856B86500D294EC /* hyper-app-creators.png */,
 				EA41606E1856A393004CA013 /* Icon-72.png */,
 				EA4160701856A393004CA013 /* Icon-Small-50.png */,
 				EA4160721856A393004CA013 /* Icon-Small.png */,
@@ -938,13 +946,14 @@
 				EA4160691856A393004CA013 /* Default@2x.png in Resources */,
 				EA4160731856A393004CA013 /* Icon-Small.png in Resources */,
 				EA41606F1856A393004CA013 /* Icon-72.png in Resources */,
-				EAAA01091856B86500D294EC /* hyper-app-creators.png in Resources */,
 				EA4160671856A393004CA013 /* Default.png in Resources */,
 				EA4160711856A393004CA013 /* Icon-Small-50.png in Resources */,
 				EA41607C1856A393004CA013 /* iTunesArtwork in Resources */,
 				EA4160751856A393004CA013 /* Icon-Small@2x.png in Resources */,
+				EA3D116F1857EF8400E6E500 /* backGround.png in Resources */,
 				EA41606D1856A393004CA013 /* Default-Landscape~ipad.png in Resources */,
 				EA41606B1856A393004CA013 /* Default-568h@2x.png in Resources */,
+				EA3D11701857EF8400E6E500 /* dragon.png in Resources */,
 				EA4160791856A393004CA013 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -968,6 +977,7 @@
 				EA4161A21856A394004CA013 /* TransformUtils.m in Sources */,
 				EA4160EF1856A393004CA013 /* CCNode+Debug.m in Sources */,
 				EA4160CA1856A393004CA013 /* ccFPSImages.m in Sources */,
+				EA3D116C1857EDA000E6E500 /* MyCocos2DClass.m in Sources */,
 				EA4161501856A394004CA013 /* CCTMXXMLParser.m in Sources */,
 				EA4161E71856A395004CA013 /* ray2.c in Sources */,
 				EA4161821856A394004CA013 /* base64.c in Sources */,
@@ -975,6 +985,7 @@
 				EA4160DC1856A393004CA013 /* CCLabelBMFont.m in Sources */,
 				EA4161891856A394004CA013 /* ccCArray.m in Sources */,
 				EA4161B31856A394004CA013 /* CDXMacOSXSupport.m in Sources */,
+				EA3D11731857EFC700E6E500 /* MyChar.m in Sources */,
 				EA4161A71856A394004CA013 /* ZipUtils.m in Sources */,
 				EA4160991856A393004CA013 /* CCActionManager.m in Sources */,
 				EA4161011856A394004CA013 /* CCParticleSystemQuad.m in Sources */,
@@ -1049,7 +1060,6 @@
 				EA4161DB1856A395004CA013 /* matrix.c in Sources */,
 				EA4160C11856A393004CA013 /* CCDrawingPrimitives.m in Sources */,
 				EA4161291856A394004CA013 /* ccShaders.m in Sources */,
-				EA4161FA1856A395004CA013 /* HelloWorldLayer.m in Sources */,
 				EA41617F1856A394004CA013 /* CCWindow.m in Sources */,
 				EA41615D1856A394004CA013 /* cocos2d.m in Sources */,
 				EA41610A1856A394004CA013 /* CCProgressTimer.m in Sources */,
