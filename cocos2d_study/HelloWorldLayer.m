@@ -39,86 +39,119 @@
 // on "init" you need to initialize your instance
 -(id) init
 {
-    NSLog(@"hello world layer init");
-    
-    		CGSize size = [[CCDirector sharedDirector] winSize];
-
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-		[CCMenuItemFont setFontSize:28];
 		
-		// Achievement Menu Item using blocks
-		CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
-			
-			
-			GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
-			achivementViewController.achievementDelegate = self;
-			
-			AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-			
-			[[app navController] presentModalViewController:achivementViewController animated:YES];
-			
-			[achivementViewController release];
-		}
-									   ];
+        CGSize size = [[CCDirector sharedDirector] winSize];
         
-		// Leaderboard Menu Item using blocks
-		CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
-			
-			
-			GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
-			leaderboardViewController.leaderboardDelegate = self;
-			
-			AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-			
-			[[app navController] presentModalViewController:leaderboardViewController animated:YES];
-			
-			[leaderboardViewController release];
-		}
-									   ];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"http://www.ljob.co.kr" fontName:@"Marker Felt" fontSize:20];
+        
+		label.position =  ccp( size.width /2 , size.height/5 );
+		[self addChild: label];
+        
+        
+        [CCMenuItemFont setFontSize:32];
+        
+        CCMenuItemFont *item1 = [CCMenuItemFont itemWithString:@"Tutorials"
+                                                        target:self
+                                                      selector:@selector(displayNext:)];
+        
+        CCMenuItemFont *item2 = [CCMenuItemFont itemWithString:@"Start Game"
+                                                        target:self
+                                                      selector:@selector(displayNext:)];
+        
+        CCMenuItemFont *item3 = [CCMenuItemFont itemWithString:@"Option"
+                                                        target:self
+                                                      selector:@selector(displayNext:)];
+        
+        CCMenuItemFont *item4 = [CCMenuItemFont itemWithString:@"High Score"
+                                                        target:self
+                                                      selector:@selector(displayNext:)];
+        
+        CCMenuItemFont *item5 = [CCMenuItemFont itemWithString:@"About"
+                                                        target:self
+                                                      selector:@selector(displayNext:)];
+        
+        CCMenu *menu = [CCMenu menuWithItems:item1, item2, item3, item4, item5, nil];
+        
+        [menu setPosition:ccp(size.width/2, size.height/2 + 20)];
+        [menu alignItemsVertically];
+        
+        [self addChild:menu];
+        
+        item1.tag = 1001;
+        item2.tag = 1002;
+        item3.tag = 1003;
+        item4.tag = 1004;
+        item5.tag = 1005;
 		
-		CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, nil];
-		
-		[menu alignItemsHorizontallyWithPadding:20];
-		[menu setPosition:ccp(size.width/2, size.height/2 - 50)];
-		
-		// Add the menu to the layer
-		[self addChild:menu];
-        
-        
-        
-        [self setTouchEnabled: YES];
-        
-        
-        
-        
-        
         
 	}
 	return self;
 }
 
--(void)registerWithTouchDispatcher{
-    
-    [[[CCDirector sharedDirector] touchDispatcher]
-     addTargetedDelegate:self
-     priority:0
-     swallowsTouches:YES];
-}
 
--(BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+-(void)displayNext:(id)sender
 {
+    switch ([(CCMenuItemFont*)sender tag]) {
+        case 1001:
+        {
+            CCScene *s1 = [CCScene node];
+            
+            [s1 addChild:[MyCocos2DClass node]];
+            
+            [[CCDirector sharedDirector]
+             replaceScene:[CCTransitionFade transitionWithDuration:1.0                                                              scene:s1]];
+        }
+            break;
+        case 1002:
+        {
+            CCScene *s1 = [CCScene node];
+            
+            [s1 addChild:[MyCocos2DClass node]];
+            
+            [[CCDirector sharedDirector]
+             replaceScene:[CCTransitionFlipAngular transitionWithDuration:1.0                                                              scene:s1]];
+        }
+            break;
+        case 1003:
+        {
+            CCScene *s1 = [CCScene node];
+            
+            [s1 addChild:[MyCocos2DClass node]];
+            
+            [[CCDirector sharedDirector]
+             replaceScene:[CCTransitionShrinkGrow transitionWithDuration:1.0                                                              scene:s1]];
+        }
+            break;
+        case 1004:
+        {
+            CCScene *s1 = [CCScene node];
+            
+            [s1 addChild:[MyCocos2DClass node]];
+            
+            [[CCDirector sharedDirector]
+             replaceScene:[CCTransitionMoveInB transitionWithDuration:1.0                                                              scene:s1]];
+        }
+            
+            break;
+        case 1005:
+        {
+            CCScene *s1 = [CCScene node];
+            
+            [s1 addChild:[MyCocos2DClass node]];
+            
+            [[CCDirector sharedDirector]
+             replaceScene:[CCTransitionMoveInT transitionWithDuration:1.0                                                              scene:s1]];
+        }
+            break;
+        default:
+            break;
+    }
     
-    id scene = [MyCocos2DClass scene];
-    id transition = [CCTransitionRotoZoom transitionWithDuration:1.0f
-                                                           scene:scene];
+    NSLog(@"menu click");
     
-    
-    [[CCDirector sharedDirector] replaceScene:transition];
-    
-    
-    return YES;
 }
 
 // on "dealloc" you need to release all your retained objects
