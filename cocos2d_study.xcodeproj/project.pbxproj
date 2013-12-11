@@ -141,6 +141,7 @@
 		EA4161F71856A395004CA013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161F61856A395004CA013 /* AppDelegate.m */; };
 		EA4161FA1856A395004CA013 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161F91856A395004CA013 /* HelloWorldLayer.m */; };
 		EA4161FD1856A395004CA013 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4161FC1856A395004CA013 /* IntroLayer.m */; };
+		EA57DDBF185826B0001814AD /* MyCocos2DClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57DDBE185826B0001814AD /* MyCocos2DClass.m */; };
 		EAAA01091856B86500D294EC /* hyper-app-creators.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAA01081856B86500D294EC /* hyper-app-creators.png */; };
 /* End PBXBuildFile section */
 
@@ -426,6 +427,8 @@
 		EA4161F91856A395004CA013 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		EA4161FB1856A395004CA013 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		EA4161FC1856A395004CA013 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		EA57DDBD185826B0001814AD /* MyCocos2DClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCocos2DClass.h; path = ../MyCocos2DClass.h; sourceTree = "<group>"; };
+		EA57DDBE185826B0001814AD /* MyCocos2DClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCocos2DClass.m; path = ../MyCocos2DClass.m; sourceTree = "<group>"; };
 		EAAA01081856B86500D294EC /* hyper-app-creators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hyper-app-creators.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -489,6 +492,8 @@
 			children = (
 				EA4161F51856A395004CA013 /* AppDelegate.h */,
 				EA4161F61856A395004CA013 /* AppDelegate.m */,
+				EA57DDBD185826B0001814AD /* MyCocos2DClass.h */,
+				EA57DDBE185826B0001814AD /* MyCocos2DClass.m */,
 				EA4161F81856A395004CA013 /* HelloWorldLayer.h */,
 				EA4161F91856A395004CA013 /* HelloWorldLayer.m */,
 				EA4161FB1856A395004CA013 /* IntroLayer.h */,
@@ -968,6 +973,7 @@
 				EA4161A21856A394004CA013 /* TransformUtils.m in Sources */,
 				EA4160EF1856A393004CA013 /* CCNode+Debug.m in Sources */,
 				EA4160CA1856A393004CA013 /* ccFPSImages.m in Sources */,
+				EA57DDBF185826B0001814AD /* MyCocos2DClass.m in Sources */,
 				EA4161501856A394004CA013 /* CCTMXXMLParser.m in Sources */,
 				EA4161E71856A395004CA013 /* ray2.c in Sources */,
 				EA4161821856A394004CA013 /* base64.c in Sources */,
